@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY LIBRARY</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <h1>MY LIBRARY</h1>
+    <div id="library"></div>
+    <button id = "new-book-btn"> Add New Book</button>
+
+    <div id = "modal" class = "hidden">
+        <form id = "bookform">
+            <h2>Add New Book</h2>
+            
+            <input type = "text" id = "title" placeholder="Title" required>
+            <input type = "text" id = "author" placeholder="Author" required>
+            <input type = "text" id = "publisher" placeholder="Publisher" required>
+            <input type = "number" id = "publicationYear" placeholder="PublicationYear" required>
+            <input type = "number" id = "edition" placeholder="Edition" required>
+            <input type = "number" id = "pages" placeholder="No of Pages" required>
+            <input type = "text" id = "language" placeholder="Language" required>
+
+            <div class = "actions">
+                <button type = "submit">Add Book</button>
+                <button type = "button" id = "close-btn">close</button>
+            </div>
+        </form>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
